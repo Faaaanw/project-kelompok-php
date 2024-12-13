@@ -1,0 +1,178 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2d5335; /* Warna latar belakang abu-abu terang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.image-box {
+  border: 0px solid #ffffff;
+  width: 80%; /* Kurangi lebar keseluruhan */
+  height: 80%; /* Kurangi tinggi keseluruhan */
+  position: relative;
+  background-image: url("../user/assets/bg-login.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; /* Menyeimbangkan layout secara horizontal */
+  padding-left: 2rem;
+}
+
+.form-container {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan transparansi */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  padding: 1.5rem; /* Kurangi padding untuk mengecilkan */
+  width: 100%;
+  max-width: 400px; /* Lebar maksimal lebih kecil */
+  margin-right: 2rem; /* Menambahkan jarak dari kanan */
+}
+
+
+.form-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #047857; /* Hijau */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb; /* Border abu-abu */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #374151; /* Warna teks */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #047857; /* Border hijau */
+  box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.3); /* Efek fokus */
+}
+
+.submit-btn {
+  background-color: #047857; /* Hijau */
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #065f46; /* Hijau lebih gelap */
+  transform: scale(1.02); /* Sedikit membesar saat hover */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Abu-abu */
+}
+
+.text-gray-700 {
+  color: #374151; /* Abu-abu gelap */
+}
+
+.text-green-700 {
+  color: #047857; /* Hijau */
+}
+
+.text-green-700:hover {
+  text-decoration: underline;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e5e7eb; /* Border abu-abu */
+  border-radius: 50%;
+  background-color: #ffffff; /* Latar belakang putih */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-buttons button:hover {
+  background-color: #f1f5f9; /* Abu-abu lebih terang */
+  border-color: #047857; /* Hijau */
+  transform: scale(1.1); /* Membesar saat hover */
+}
+
+.social-buttons i {
+  font-size: 1.5rem;
+  color: #374151; /* Warna ikon */
+}
+
+.terms {
+  font-size: 0.875rem; /* Ukuran teks kecil */
+  color: #6b7280; /* Abu-abu */
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.terms a {
+  color: #047857; /* Hijau */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms a:hover {
+  color: #065f46; /* Hijau lebih gelap */
+  text-decoration: underline;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.login-link a {
+  color: #047857;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #065f46;
+  text-decoration: underline;
+}
